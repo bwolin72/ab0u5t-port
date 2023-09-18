@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/32398f6394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div >
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="pub/logo.png" alt="EETHM" class="logo">
+          <ul id="sidemenu">
+            <li>
+              <a href="#service">Service</a></li>
+             <li> <a href="#about">about</a></li>
+             <li> <a href="#contact">Contact</a></li>
+             <li> <a href="#portfolio">Portfolio</a></li>
+             <li><a href="#">Resume</a></li>
+             <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Network Security</p>
+          <h1>Hi I'm<span> Maxwell</span>,<br> a<strong> network security</strong><br> consultant </h1>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- -------about------ -->
+   <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="/pub/main.jpg" alt="">
+        </div>
+        <div class="about-col2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="par"><strong> Empire Network Security</strong><br> is a network security agency to secure your network infrastructure.<br> Service includes secure Wi-Fi, multi-factor authentication, <br>and network intelligence products and services designed for SMB’s.</p>
+
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Network Security</span><br>Configuring network Interface</li>
+              <li><span>Web Development</span><br>Creating Ultra-Modern GUI</li>
+              <li><span>Pentesting</span><br>Vulnerability Management</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>0 - curent</span><br>CT University <strong>students</strong></li>
+              <li><span>0 - curent</span><br>CT University <strong>students</strong></li>
+              <li><span>0 - curent</span><br>CT University <strong>students</strong></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><strong>2016 - 2019</strong><br>New Generation College</li>
+              <li><strong>2021 - 2024</strong><br>CT University</li>
+              <li><strong>2023 06</strong><br>Training @ansh Infotech</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- ------Services---- -->
+   <div id="service">
+    <div class="container">
+      <h1 class="sub-title">Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-server"></i>
+          <h2>Network Security</h2>
+          <p><strong>Ethical-Empire</strong> has your network security as our main goal to enhance throughput and integrity of data in your LAN</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p><strong>Ethical-Empire</strong> has your network security as our main goal to enhance throughput and integrity of data in your LAN</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Data Manipulation</h2>
+          <p><strong>Ethical-Empire</strong> has your network security as our main goal to enhance throughput and integrity of data in your LAN</p>
+          <a href="#">Learn More</a>
+        </div>        
+      </div>
+    </div>
+   </div>
+   <!-- --------------portfolio------- -->
+   <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Project</h1>
+       <div class="work-list">
+        <div class="work">
+          <img src="pub/pfsense.jpeg" alt="First Project">
+          <div class="layer">
+            <h3>Social Media</h3>
+            <p> The link will take you to project</p>
+            <a href="#"><i class="fa-brands fa-readme"></i></a>
+          </div>
+        </div>
+        
+          <div class="work">
+            <img src="pub/web.jpeg" alt="First Project">
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p> The link will take you to project</p>
+              <a href="#"><i class="fa-brands fa-readme"></i></a>
+            </div>
+          </div>
+          
+            <div class="work">
+              <img src="pub/cisco.jpeg" alt="First Project">
+              <div class="layer">
+                <h3>Social Media</h3>
+                <p> The link will take you to project</p>
+                <a href="#"><i class="fa-brands fa-readme"></i></a>
+              </div>
+            </div>
+       </div>
+       <a href="#" class="btn">See More</a>
+    </div>
+   </div>
+<!-- --------------Contact---- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-paper-plane"></i>maxborris@75gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>+91 8283835772</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <a href="pub/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form action="#">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
+          <button type="submit" class="btn btn2">Send</button>
+        </form>
+        <span id="msg">Message successfuly sent</span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Max-B. Made with<i class="fa-solid fa-heart"></i> by EETHM</p>
+  </div>
+</div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right = "0";
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
