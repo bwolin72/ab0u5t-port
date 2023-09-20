@@ -14,10 +14,15 @@ body{
 }
 #header{
     width: 100%;
-    height: auto;
-    background-image: url('/pub/main.jpg');
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    background-image: url('/pub/try.jpg');
+    background-size: contain;
+    background-position: contain;
+    
+}
+#header[url]{
+    padding-left: 0;
+    margin-left: 100%;
 }
 .container{
     padding: 10px 10%;
@@ -31,6 +36,7 @@ nav{
 }
 .logo{
     width: 140px;
+    background-color: #262626;
 }
 
 nav ul li{
@@ -59,10 +65,17 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
+    width: 50%;
     margin-top: 20%;
     font-size: 25px;
-    margin-bottom: 10%;
     justify-content: left;
+    background: #262626;
+    padding-left: 5%;
+    padding-top: 30px;
+}
+
+#sidemenu{
+    background-color: #262626;
 }
 .header-text h1{
     font-size: 60px;
@@ -105,7 +118,7 @@ nav ul li a:hover::after{
     color: #fff;
 }
 strong{
-    color: indigo;
+    color: #070a13;
 }
 span{
     color: #ff004f;
