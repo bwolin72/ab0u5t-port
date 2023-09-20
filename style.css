@@ -17,7 +17,7 @@ body{
     height: 100%;
     background-image: url('/pub/try.jpg');
     background-size: contain;
-    background-position: contain;
+    background-position: cover;
     
 }
 #header[url]{
@@ -25,7 +25,7 @@ body{
     margin-left: 100%;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 4%;
 
 }
 nav{
@@ -37,6 +37,7 @@ nav{
 .logo{
     width: 140px;
     background-color: #262626;
+    padding: 0;
 }
 
 nav ul li{
@@ -65,7 +66,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    width: 50%;
+    width: 55%;
     margin-top: 20%;
     font-size: 25px;
     justify-content: left;
@@ -265,7 +266,27 @@ span{
     height: 100%;
 }
 
-.btn{
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: rgb(202, 128, 255, 0.5);
+    color: #f1f5f9;
+    padding: 0.5em 0,6em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+      0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px rgb(202, 128, 255);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+      0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px #ff004f;
+  }
+  
+.btn3{
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -276,7 +297,7 @@ span{
     color: whitesmoke;
     transition: background 0.5s;
 }
-.btn:hover{
+.btn3:hover{
     background: #ff004f;
 }
 
@@ -332,10 +353,10 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .btn2{
-    padding: 14px 60px;
+form .btn{
+    padding: 10px 60px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
 }
 .copyright{
@@ -343,8 +364,8 @@ form .btn2{
     text-align: center;
     padding: 25px 0;
     color: #262626;
-    font-weight: bold 500;
-    margin-top: 20px;
+    font-weight: bold 100%;
+    margin-top: 50px;
 }
 .copyright i{
     color: #ff004f;
@@ -437,8 +458,9 @@ nav .fa-solid{
 }
 #msg{
     color: #61b752;
-    margin-top: -40px;
+    margin-top: -65px;
     display: block;
 }
+
 
 

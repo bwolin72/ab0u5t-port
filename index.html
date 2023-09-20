@@ -110,7 +110,7 @@
           <div class="layer">
             <h3>Social Media</h3>
             <p> The link will take you to project</p>
-            <a href="#" diabled><i class="fa-brands fa-readme"></i></a>
+            <a href="/da/" diabled><i class="fa-brands fa-readme"></i></a>
           </div>
         </div>
         
@@ -128,11 +128,12 @@
               <div class="layer">
                 <h3>Social Media</h3>
                 <p> Let share more on Linkdn</p>
-                <a href="#"><i class="fa-brands fa-readme"></i></a>
+                <a href="https://www.linkedin.com/in/maxwell-appiah-b47154238/"><i class="fa-brands fa-readme"></i></a>
               </div>
             </div>
-       </div>
-       <a href="#" class="btn">See More</a>
+          </div>
+       
+       <a href="#" class="btn3">See More</a>
     </div>
    </div>
 <!-- --------------Contact---- -->
@@ -141,29 +142,29 @@
     <div class="row">
       <div class="contact-left">
         <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-regular fa-paper-plane"></i>maxborris@75gmail.com</p>
-        <p><i class="fa-solid fa-phone-volume"></i>+91 8283835772</p>
+        <p><i class="fa-regular fa-paper-plane"></i>eethm.net.sec@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>+91 82838 35772</p>
         <div class="social-icons">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <a href="pub/my-cv.pdf" download class="btn btn2">Download CV</a>
+          <a href="https://github.com/bwolin72" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/maxwell-appiah-b47154238/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://whatsapp.com/dl/code=pSKhS1jN45  "><i class="fa-brands fa-whatsapp"></i></a>
+        </div><br><br>
+        <a href="pub/my-cv.pdf" download class="btn">Download CV</a>
       </div>
       <div class="contact-right">
-        <form action="#">
+        <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your email" required>
           <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
-          <button type="submit" class="btn btn2">Send</button>
+          <button type="submit" class="btn">Send</button>
         </form>
-        <span id="msg">Message successfuly sent</span>
+        <span id="msg"></span>
       </div>
     </div>
   </div>
   <div class="copyright">
-    <p>Copyright @ Max-B. Made with<i class="fa-solid fa-heart"></i> by EETHM</p>
+    <p>Copyright &#169; Max-B. Made with<i class="fa-solid fa-heart"></i> by EETHM&#8482;</p>
   </div>
 </div>
   <script>
@@ -191,6 +192,24 @@ var tabcontents = document.getElementsByClassName("tab-contents");
     function closemenu(){
       sidemeu.style.right = "-200px";
     }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPbQL59BDzvd2ZPHJo8tRXMbwOE0zoRNQ8H_XGa4kRmNH0NZEBQP0Xj8baKlm0ssnK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent, I will response within 24hrs"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 </html>
